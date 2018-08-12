@@ -1,0 +1,127 @@
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul li p {
+  margin: 0;
+  font-size: 250px;
+  line-height: 221px;
+  letter-spacing: -10px;
+  display: inline-block;
+}
+
+
+ul.outline li p {
+  text-shadow: -1px -1px 0 rgba(255,255,255,.5), 1px -1px 0 rgba(255,255,255,.5), -1px 1px 0 rgba(255,255,255,.5), 1px 1px 0 rgba(255,255,255,.5);
+  color: rgba(0, 0, 0, .1);
+}
+
+ul.active li p {
+  color: #1378ff;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  font-family: impact;
+}
+
+.animate-skew-left {
+  transform: skewY(-10deg)
+}
+
+.animate-skew-right {
+  transform: skewY(10deg)
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.container-ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
+}
+
+ul {
+  position: absolute;
+  top: 225px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 100ms;
+}
+
+.move1 {
+  transform: translate3d(0, -221px, 0);
+}
+
+.move2 {
+  transform: translate3d(0, -448px, 0);
+}
+
+.move3 {
+  transform: translate3d(0, -661px, 0);
+}
+
+.move4 {
+  transform: translate3d(0, -885px, 0);
+}
+
+.move5 {
+  transform: translate3d(0, -1107px, 0);
+}
+
+.container-ul--clip {
+  clip: rect(215px, 1295px, 422px, 0px);
+}
+
+@media screen and (max-width: 900px) {
+  ul li  p {
+    font-size: 100px;
+    line-height: 80px;
+    letter-spacing: -10px;
+  }
+
+  video {
+    height: 100vh;
+  }
+
+  .container-ul--clip {
+    clip: rect(215px, 1295px, 300px, 0px);
+  }
+
+
+  .move1 {
+    transform: translate3d(0, -87px, 0);
+  }
+
+  .move2 {
+    transform: translate3d(0, -166px, 0);
+  }
+
+  .move3 {
+    transform: translate3d(0, -247px, 0);
+  }
+
+  .move4 {
+    transform: translate3d(0, -332px, 0);
+  }
+
+  .move5 {
+    transform: translate3d(0, -411px, 0);
+  }
+}
