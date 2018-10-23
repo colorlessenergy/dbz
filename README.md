@@ -1,1 +1,3 @@
 # dbz-visual
+
+about dbz
